@@ -1,0 +1,59 @@
+/* header */
+.header_menu_fixed {
+background-color: #1F1D36;
+padding: 1.25rem 0;
+color: white;
+}
+
+.general_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/* Center */
+.center {
+  text-align: center;
+}
+
+/*  button  */
+.but {
+  margin: 0 2.5rem 0 2.5rem;
+  width: 15.6rem;
+  height: 3.7rem;
+  background-color: #204254;
+  color: white;
+}
+
+
+.bat_front_menu {
+  margin: 6% 30%;
+  width: 20rem;
+  height: 5rem;
+  background-color: #204254;
+}
+
+.carousel_button_prev {
+padding-right: 6rem;
+}
+
+.carousel_button_next {
+padding-left: 6rem;
+color: black;
+}
+/* container */
+
+.containergeneral {
+background-color: #F7F7F7;
+}
+
+.column_in_container {
+  padding: 2rem 5rem;
+}
+
+
+/* margin top */
+.container_margin_top {
+  margin-top: 12rem;
+}
