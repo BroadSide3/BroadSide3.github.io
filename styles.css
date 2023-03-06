@@ -22,8 +22,27 @@
     .box {
         height: 80px !important;
     }
+
+    #playerRoll::before {
+        content: attr(data-label);
+    }
+    #botRoll::before {
+        content: attr(data-label);
+    }
+
+    #hiddenRow {
+        display: none;
+    }
 }
 
 .noRetry{
     display: none;
+}
+
+.zeroColor {
+    color: #3393ff;
+}
+
+.crossColor {
+    color: orange;
 }

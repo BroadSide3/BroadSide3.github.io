@@ -68,13 +68,16 @@ function checkWin(len) {
     if (len >= 3 && isWin()) {
         winStatus = true;
         if (currentPlayer == "CROSS") {
-            resultContainer.innerText = "X Won the Match.";
+            resultContainer.innerText = "Player won the Match.";
+            document.getElementById('rollResult').style.display = 'none'
         } else {
-            resultContainer.innerText = "O Won the Match.";
+            resultContainer.innerText = "Bot won the Match.";
+            document.getElementById('rollResult').style.display = 'none'
         }
     } else if (len == 8) {
         winStatus = true;
         resultContainer.innerText = "= Match Draw.";
+        document.getElementById('rollResult').style.display = 'none'
     }
     return winStatus;
 }
@@ -134,7 +137,7 @@ function letsRoll() {
     document.getElementById("botRoll").innerHTML = diceRollBot;
 
     if (diceRollPlayer > diceRollBot){
-        document.getElementById("rollResult").innerHTML = "Player win first turn with " + diceRollPlayer + "!";
+        document.getElementById("rollResult").innerHTML = "Player won first turn with " + diceRollPlayer + "!";
         document.getElementById('rollButton').style.display = 'none';
 
     } else if (diceRollPlayer == diceRollBot){
@@ -144,7 +147,7 @@ function letsRoll() {
         // document.getElementById("rollResult").innerHTML = "Tie, Roll again!";
     }
     else {
-        document.getElementById("rollResult").innerHTML = "Bot win first turn with " + diceRollBot + "!";
+        document.getElementById("rollResult").innerHTML = "Bot won first turn with " + diceRollBot + "!";
         let botFirst = Math.floor(Math.random() * 9);
             boxClick(allBox[botFirst], "ZERO", botFirst);
         document.getElementById('rollButton').style.display = 'none';
