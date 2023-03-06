@@ -1,0 +1,29 @@
+
+.cross::before {
+    content: "X";
+    color: orange;
+    font-size: 3rem;
+}
+.zero::before {
+    content: "O";
+    color: #3393ff;
+    font-size: 3rem;
+}
+
+.box {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .box {
+        height: 80px !important;
+    }
+}
+
+.noRetry{
+    display: none;
+}
