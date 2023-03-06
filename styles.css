@@ -33,6 +33,11 @@
     #hiddenRow {
         display: none;
     }
+
+    #restart {
+        position: relative !important;
+    }
+
 }
 
 .noRetry{

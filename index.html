@@ -16,16 +16,24 @@
 
 <body class="d-flex h-100 text-center text-white bg-dark">
 
-<div><button class="btn btn-primary my-4" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="letsRoll()" id="rollButton">Roll for initiative</button></div>
+<div><button class="btn btn-outline-light btn-lg my-4" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="letsRoll()" id="rollButton">Roll for initiative</button></div>
 
-
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
-    <p id="result" class="h2 mt-4"></p>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column position-relative">
 
     <div class="collapse" id="collapseExample">
 
-        <div><p id="rollResult" class="h2"></p>
+    <button class="btn btn-outline-light btn-lg position-absolute end-0" id="restart"  onClick="refreshPage()">↻ Restart</button>
+
+    <p id="result" class="h2 mt-4"></p>
+
+
+
+
+        <div><p id="rollResult" class="h3 mb-3"></p>
+
+
+
+
         <div class="row" id="hiddenRow">
             <div class="col-sm-12 col-md-6 col-lg-6 h2 crossColor">Player</div>
             <div class="col-sm-12 col-md-6 col-lg-6 h2 zeroColor">Bot</div>
@@ -39,7 +47,7 @@
         </div>
 
 
-        <button class="btn btn-primary my-4" id="restart"  onClick="refreshPage()">↻ Restart</button>
+
 
             <div class="row">
                 <div class="col 1"></div>
