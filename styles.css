@@ -51,3 +51,7 @@
 .crossColor {
     color: orange;
 }
+
+#collapsedGame{
+    display: none;
+}

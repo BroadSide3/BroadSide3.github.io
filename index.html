@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<div class="container   ">
+<div class="container">
 <header>
     <p class="h1 pt-5 pb-3  border-bottom border-2 border-secondary">Tic-Tac-Toe game</p>
 </header>
@@ -22,62 +22,58 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column position-relative">
 
     <div class="collapse" id="collapseExample">
-
-    <button class="btn btn-outline-light btn-lg position-absolute end-0" id="restart"  onClick="refreshPage()">↻ Restart</button>
-
-    <p id="result" class="h2 mt-4"></p>
-
-
-
-
         <div><p id="rollResult" class="h3 mb-3"></p>
 
-
-
-
-        <div class="row" id="hiddenRow">
-            <div class="col-sm-12 col-md-6 col-lg-6 h2 crossColor">Player</div>
-            <div class="col-sm-12 col-md-6 col-lg-6 h2 zeroColor">Bot</div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 crossColor h3" id="playerRoll" data-label="Player: "></div>
-            <div class="col-sm-12 col-md-6 col-lg-6 zeroColor h3" id="botRoll" data-label="Bot: "></div>
-        </div>
-
-        </div>
-
-
-
+            <div class="row" id="hiddenRow">
+                <div class="col-sm-12 col-md-6 col-lg-6 h2 crossColor">Player</div>
+                <div class="col-sm-12 col-md-6 col-lg-6 h2 zeroColor">Bot</div>
+            </div>
 
             <div class="row">
-                <div class="col 1"></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 crossColor h3" id="playerRoll" data-label="Player 1: "></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 zeroColor h3" id="botRoll" data-label="Player 2: "></div>
+            </div>
+
+        </div>
+        <button onclick="toggleFunction()" class="btn btn-outline-light btn-lg my-4">Continue</button>
+    </div>
+
+
+
+    <div id="collapsedGame">
+        <button class="btn btn-outline-light btn-lg position-absolute end-0" id="restart"  onClick="refreshPage()">↻ Restart</button>
+
+        <p id="result" class="h2 mt-4"></p>
+
+
+        <div class="row">
+            <div class="col 1"></div>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3 border-bottom" data-box-num="0"></section>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3 border-start border-bottom" data-box-num="1"></section>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3 border-start border-bottom" data-box-num="2"></section>
-                <div class="col 1"></div>
-            </div>
+            <div class="col 1"></div>
+        </div>
 
-            <div class="row">
-                <div class="col 1"></div>
+        <div class="row">
+            <div class="col 1"></div>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3 border-bottom" data-box-num="3"></section>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3 border-start border-bottom" data-box-num="4"></section>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3 border-start border-bottom" data-box-num="5"></section>
-                <div class="col 1"></div>
-            </div>
+            <div class="col 1"></div>
+        </div>
 
-            <div class="row">
-                <div class="col 1"></div>
+        <div class="row">
+            <div class="col 1"></div>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3" data-box-num="6"></section>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3 border-start" data-box-num="7"></section>
             <section class="box col-3 col-sm-3 col-md-3 col-lg-3 border-start" data-box-num="8"></section>
-                <div class="col 1"></div>
-            </div>
-    </div>
+            <div class="col 1"></div>
+        </div>
 
-<footer class="mt-5 text-white-50">Game by BroadSide3</footer>
+
+
 </div>
-
+    <footer class="mt-5 text-white-50">Game by BroadSide3</footer>
 <script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

@@ -153,8 +153,33 @@ function letsRoll() {
         document.getElementById('rollButton').style.display = 'none';
     }
 
+    let imageContainerPlayer = document.getElementById("playerRoll");
+    if (diceRollPlayer == 1) imageContainerPlayer.innerHTML = '<img src="media/dice-1.svg">';
+    else if (diceRollPlayer == 2) imageContainerPlayer.innerHTML = '<img src="media/dice-2.svg">';
+    else if (diceRollPlayer == 3) imageContainerPlayer.innerHTML = '<img src="media/dice-3.svg">';
+    else if (diceRollPlayer == 4) imageContainerPlayer.innerHTML = '<img src="media/dice-4.svg">';
+    else if (diceRollPlayer == 5) imageContainerPlayer.innerHTML = '<img src="media/dice-5.svg">';
+    else  imageContainerPlayer.innerHTML = '<img src="media/dice-6.svg">';
+
+    let imageContainerBot = document.getElementById("botRoll");
+    if (diceRollBot == 1) imageContainerBot.innerHTML = '<img src="media/dice-1-bot.svg">';
+    else if (diceRollBot == 2) imageContainerBot.innerHTML = '<img src="media/dice-2-bot.svg">';
+    else if (diceRollBot == 3) imageContainerBot.innerHTML = '<img src="media/dice-3-bot.svg">';
+    else if (diceRollBot == 4) imageContainerBot.innerHTML = '<img src="media/dice-4-bot.svg">';
+    else if (diceRollBot == 5) imageContainerBot.innerHTML = '<img src="media/dice-5-bot.svg">';
+    else  imageContainerBot.innerHTML = '<img src="media/dice-6-bot.svg">';
+
 }
 
 function refreshPage(){
     window.location.reload();
 }
+
+function toggleFunction(){
+    let x = document.getElementById("collapseExample");
+    let y = document.getElementById("collapsedGame");
+    y.style.display = "block";
+    x.style.display = "none";
+
+
+};
