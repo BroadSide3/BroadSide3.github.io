@@ -180,6 +180,4 @@ function toggleFunction(){
     let y = document.getElementById("collapsedGame");
     y.style.display = "block";
     x.style.display = "none";
-
-
 };
